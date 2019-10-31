@@ -1,0 +1,12 @@
+C:\Users\patricia\Documents\c#\Contabilidad\Contabilidad\Contabilidad\bin\Release\Contabilidad.exe.config
+C:\Users\patricia\Documents\c#\Contabilidad\Contabilidad\Contabilidad\bin\Release\Contabilidad.exe
+C:\Users\patricia\Documents\c#\Contabilidad\Contabilidad\Contabilidad\bin\Release\Contabilidad.pdb
+C:\Users\patricia\Documents\c#\Contabilidad\Contabilidad\Contabilidad\obj\Release\Contabilidad.CuentaForm.resources
+C:\Users\patricia\Documents\c#\Contabilidad\Contabilidad\Contabilidad\obj\Release\Contabilidad.Properties.Resources.resources
+C:\Users\patricia\Documents\c#\Contabilidad\Contabilidad\Contabilidad\obj\Release\Contabilidad.csproj.GenerateResource.cache
+C:\Users\patricia\Documents\c#\Contabilidad\Contabilidad\Contabilidad\obj\Release\Contabilidad.csproj.CoreCompileInputs.cache
+C:\Users\patricia\Documents\c#\Contabilidad\Contabilidad\Contabilidad\obj\Release\Contabilidad.exe
+C:\Users\patricia\Documents\c#\Contabilidad\Contabilidad\Contabilidad\obj\Release\Contabilidad.pdb
+C:\Users\patricia\Documents\c#\Contabilidad\Contabilidad\Contabilidad\bin\Release\Contabilidad.exe.CodeAnalysisLog.xml
+C:\Users\patricia\Documents\c#\Contabilidad\Contabilidad\Contabilidad\bin\Release\Contabilidad.exe.lastcodeanalysissucceeded
+C:\Users\patricia\Documents\c#\Contabilidad\Contabilidad\Contabilidad\obj\Release\Contabilidad.csprojAssemblyReference.cache

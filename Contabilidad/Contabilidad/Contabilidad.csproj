@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F738C470-5082-4EA1-9448-87F2E76AD2B5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Contabilidad</RootNamespace>
+    <AssemblyName>Contabilidad</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Contabilidad.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.5\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FConfiguracionesContables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConfiguracionesContables.Designer.cs">
+      <DependentUpon>FConfiguracionesContables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\DataAcces_ConfiguracionesContables.cs" />
+    <Compile Include="FPlanCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPlanCuentas.Designer.cs">
+      <DependentUpon>FPlanCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="models\nivelesCuentas.cs" />
+    <Compile Include="FBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBusqueda.Designer.cs">
+      <DependentUpon>FBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\DataAcces_Cuentas.cs" />
+    <Compile Include="FPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPrincipal.Designer.cs">
+      <DependentUpon>FPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="models\Cuenta.cs" />
+    <Compile Include="FCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCuenta.Designer.cs">
+      <DependentUpon>FCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="CuentaRequest.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FBusqueda.resx">
+      <DependentUpon>FBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCuenta.resx">
+      <DependentUpon>FCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConfiguracionesContables.resx">
+      <DependentUpon>FConfiguracionesContables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPlanCuentas.resx">
+      <DependentUpon>FPlanCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPrincipal.resx">
+      <DependentUpon>FPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64673.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\646731.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\646732.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6467311.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6467312.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
