@@ -52,57 +52,118 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FConfiguracionesContables.cs">
+    <Compile Include="Class\Conexion.cs" />
+    <Compile Include="DataAccess\DataAcces_Documentos.cs" />
+    <Compile Include="DataAccess\DataAcces_Movimiento.cs" />
+    <Compile Include="Forms\FMovimiento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FConfiguracionesContables.Designer.cs">
+    <Compile Include="Forms\FMovimiento.Designer.cs">
+      <DependentUpon>FMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FSiguiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FSiguiente.Designer.cs">
+      <DependentUpon>FSiguiente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FTipoTran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FTipoTran.Designer.cs">
+      <DependentUpon>FTipoTran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfases\IConexionRequest.cs" />
+    <Compile Include="Interfases\IMovimientoRequest.cs" />
+    <Compile Include="Models\Documento.cs" />
+    <Compile Include="Models\movimiento.cs" />
+    <Compile Include="Interfases\Tipo_Tran_Request.cs" />
+    <Compile Include="Interfases\CentroRequest.cs" />
+    <Compile Include="DataAccess\DataAcces_Tipo_Tran.cs" />
+    <Compile Include="Models\tipo_transacciones.cs" />
+    <Compile Include="Interfases\TerceroRequest.cs" />
+    <Compile Include="DataAccess\DataAcces_Centros.cs" />
+    <Compile Include="DataAccess\DataAcces_Terceros.cs" />
+    <Compile Include="Forms\FTerceros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FTerceros.Designer.cs">
+      <DependentUpon>FTerceros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FConfiguracionesContables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FConfiguracionesContables.Designer.cs">
       <DependentUpon>FConfiguracionesContables.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccess\DataAcces_ConfiguracionesContables.cs" />
-    <Compile Include="FPlanCuentas.cs">
+    <Compile Include="Forms\FCentros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FPlanCuentas.Designer.cs">
+    <Compile Include="Forms\FCentros.Designer.cs">
+      <DependentUpon>FCentros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FPlanCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FPlanCuentas.Designer.cs">
       <DependentUpon>FPlanCuentas.cs</DependentUpon>
     </Compile>
-    <Compile Include="models\nivelesCuentas.cs" />
-    <Compile Include="FBusqueda.cs">
+    <Compile Include="Models\Tercero.cs" />
+    <Compile Include="Models\centro.cs" />
+    <Compile Include="Models\nivelesCuentas.cs" />
+    <Compile Include="Forms\FBusqueda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FBusqueda.Designer.cs">
+    <Compile Include="Forms\FBusqueda.Designer.cs">
       <DependentUpon>FBusqueda.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccess\DataAcces_Cuentas.cs" />
-    <Compile Include="FPrincipal.cs">
+    <Compile Include="Forms\FPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FPrincipal.Designer.cs">
+    <Compile Include="Forms\FPrincipal.Designer.cs">
       <DependentUpon>FPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="models\Cuenta.cs" />
-    <Compile Include="FCuenta.cs">
+    <Compile Include="Models\Cuenta.cs" />
+    <Compile Include="Forms\FCuenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FCuenta.Designer.cs">
+    <Compile Include="Forms\FCuenta.Designer.cs">
       <DependentUpon>FCuenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Helper.cs" />
-    <Compile Include="CuentaRequest.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Interfases\Helper.cs" />
+    <Compile Include="Interfases\CuentaRequest.cs" />
+    <Compile Include="Interfases\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FBusqueda.resx">
+    <EmbeddedResource Include="Forms\FBusqueda.resx">
       <DependentUpon>FBusqueda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FCuenta.resx">
+    <EmbeddedResource Include="Forms\FMovimiento.resx">
+      <DependentUpon>FMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FSiguiente.resx">
+      <DependentUpon>FSiguiente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FTipoTran.resx">
+      <DependentUpon>FTipoTran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FTerceros.resx">
+      <DependentUpon>FTerceros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FCentros.resx">
+      <DependentUpon>FCentros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FCuenta.resx">
       <DependentUpon>FCuenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FConfiguracionesContables.resx">
+    <EmbeddedResource Include="Forms\FConfiguracionesContables.resx">
       <DependentUpon>FConfiguracionesContables.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FPlanCuentas.resx">
+    <EmbeddedResource Include="Forms\FPlanCuentas.resx">
       <DependentUpon>FPlanCuentas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FPrincipal.resx">
+    <EmbeddedResource Include="Forms\FPrincipal.resx">
       <DependentUpon>FPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -116,6 +177,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Movimiento.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -127,7 +189,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Forms\App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\64673.png" />
@@ -143,6 +205,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\6467312.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0141.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

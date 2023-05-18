@@ -81,8 +81,24 @@ namespace Contabilidad
             }
         }
 
-       
+        public List<Cuenta> GetCuentasAfectables()
+        {
 
-     
+            using (System.Data.IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.cnnVal("contabilidad")))
+            {
+                var output = connection.Query<Cuenta>($"select * from cuentas where afe = 1 order by cuenta, afe, naturaleza").ToList();
+                try
+                {
+                    return output;
+                }
+                catch
+                {
+                    MessageBox.Show("El sistema no tiene conección. Favor verifique");
+                    return output;
+                }
+            }
+        }
+
+
     }
 }

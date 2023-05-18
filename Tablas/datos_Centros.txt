@@ -1,0 +1,6 @@
+insert into centros
+values
+--('01',	'LUZ')
+--('02',	'AGUA')
+--('03',	'TELÉFONO')
+('04',	'CONDOMINIO')

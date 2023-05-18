@@ -1,0 +1,5 @@
+5	|	C	|	1705122263	|	JOSE VICENTE	|	CEDEÑO	|	jvcedenom@hotmail.com	|	1	|
+3	|	C	|	1710932508	|	MARIA ISABEL	|	MORALES	|	mimorales@gmail.com	|	1	|
+2	|	C	|	1725254484	|	ANDRES FELIPE	|	CEDEÑO	|	afcedenom@hotmail.es	|	1	|
+1	|	C	|	1725254492	|	JOSE MATEO	|	CEDEÑO	|	jmcedenom@hotmail.com	|	1	|
+4	|	C	|	1800164657	|	CUMANDA	|	SANCHEZ	|	patyfdl@hotmail.com	|	1	|
